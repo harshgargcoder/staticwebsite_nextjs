@@ -1,0 +1,30 @@
+import Link from "next/link"
+import { Spotlight } from "./ui/Spotlight";
+
+function HeroSection() {
+    return (
+        <div
+            className="h-auto md:h-[40rem] w-full rounded-md flex flex-col items-center justify-center relative overflow-hidden mx-auto py-10 md:py-0"
+        >
+            <Spotlight
+        className="-top-40 left-0 md:-top-20 md:left-60"
+        fill="white"
+      />
+            <div className="z-10 text-center relative p-4 w-full">
+                <h1 className="mt-20 md:mt-0 text-3xl md:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
+                    Master the Craft of Coding
+                </h1>
+                <p className="mt-4 font-normal text-base md:text-lg text-neutral-300 max-w-lg mx-auto">
+                    Unlock your coding potential with our expert-led courses designed for all skill levels. Gain practical skills through hands-on projects and real-world applications to advance your career in technology. Start learning today and become the coder you aspire to be.
+                </p>
+                <div className="mt-4">
+                    <Link href={"/courses"} >
+                        Explore the Courses
+                    </Link>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default HeroSection

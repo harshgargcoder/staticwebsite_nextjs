@@ -1,0 +1,44 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "Web Development",
+      "slug": "web-development",
+      "description": "Learn HTML, CSS, JavaScript, React, and modern frameworks to become a full-stack web developer.",
+      "price": 199.99,
+      "instructor": "Rahul Sharma",
+      "isFeatured": true,
+      "image": "/courses/web-development.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Data Science",
+      "slug": "data-science",
+      "description": "Master data analysis, Python, statistics, and visualization to solve real-world problems.",
+      "price": 249.99,
+      "instructor": "Anita Verma",
+      "isFeatured": true,
+      "image": "/courses/data-science.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Machine Learning",
+      "slug": "machine-learning",
+      "description": "Understand machine learning algorithms, model training, and AI concepts using Python.",
+      "price": 299.99,
+      "instructor": "Arjun Mehta",
+      "isFeatured": false,
+      "image": "/courses/machine-learning.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Mobile Development",
+      "slug": "mobile-development",
+      "description": "Build Android and iOS apps using React Native and modern mobile development tools.",
+      "price": 219.99,
+      "instructor": "Neha Kapoor",
+      "isFeatured": false,
+      "image": "/courses/mobile-development.jpg"
+    }
+  ]
+}

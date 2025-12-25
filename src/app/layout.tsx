@@ -10,13 +10,15 @@ export const metadata: Metadata = {
   description: "A simple Next.js application with TypeScript and Google Fonts",
 };
 
-export default function RootLayout({ children, }: Readonly <{ children: React.ReactNode }>) {
+export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className="dark">
       <body className={inter.className}>
-        <Navbar />
+        <div className="relative w-full flex item justify-center">
+          <Navbar />
+        </div>
         {children}
-        </body>
+      </body>
     </html>
   );
 }
