@@ -1,0 +1,64 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "Guitar Fundamentals",
+      "slug": "guitar-fundamentals",
+      "description": "Learn the basics of playing guitar with our comprehensive beginner's course.",
+      "price": 99.99,
+      "instructor": "John Doe",
+      "isFeatured": true,
+      "image": "/courses/guitar.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Advanced Guitar Techniques",
+      "slug": "advanced-guitar-techniques",
+      "description": "Master advanced guitar techniques including solos, scales, and improvisation.",
+      "price": 149.99,
+      "instructor": "Alex Turner",
+      "isFeatured": false,
+      "image": "/courses/advanced-guitar.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Vocal Training for Beginners",
+      "slug": "vocal-training-beginners",
+      "description": "Improve your voice with proper breathing, pitch control, and vocal exercises.",
+      "price": 89.99,
+      "instructor": "Sarah Wilson",
+      "isFeatured": true,
+      "image": "/courses/vocals.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Music Theory Basics",
+      "slug": "music-theory-basics",
+      "description": "Understand notes, scales, chords, and rhythm to strengthen your musical foundation.",
+      "price": 79.99,
+      "instructor": "Michael Brown",
+      "isFeatured": false,
+      "image": "/courses/music-theory.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Music Production with FL Studio",
+      "slug": "music-production-fl-studio",
+      "description": "Learn music production, mixing, and mastering using FL Studio from scratch.",
+      "price": 199.99,
+      "instructor": "Daniel Roberts",
+      "isFeatured": true,
+      "image": "/courses/music-production.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Piano for Absolute Beginners",
+      "slug": "piano-for-beginners",
+      "description": "Start playing piano with easy lessons covering keys, chords, and simple songs.",
+      "price": 109.99,
+      "instructor": "Emily Clark",
+      "isFeatured": false,
+      "image": "/courses/piano.jpg"
+    }
+  ]
+}
