@@ -27,7 +27,7 @@
       "description": "Understand machine learning algorithms, model training, and AI concepts using Python.",
       "price": 299.99,
       "instructor": "Arjun Mehta",
-      "isFeatured": false,
+      "isFeatured": true,
       "image": "/courses/machine-learning.jpg"
     },
     {
@@ -37,8 +37,18 @@
       "description": "Build Android and iOS apps using React Native and modern mobile development tools.",
       "price": 219.99,
       "instructor": "Neha Kapoor",
-      "isFeatured": false,
+      "isFeatured": true,
       "image": "/courses/mobile-development.jpg"
-    }
+    },
+    {
+      "id": 5,
+      "title": "Backend Development",
+      "slug": "backend-development",
+      "description": "Learn backend basics including servers, APIs, databases, authentication, and REST architecture.",
+      "price": 179.99,
+      "instructor": "Amit Kumar",
+      "isFeatured": true,
+      "image": "/courses/backend-development.jpg"
+    }  
   ]
 }
