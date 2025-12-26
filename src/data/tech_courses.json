@@ -8,7 +8,7 @@
       "price": 199.99,
       "instructor": "Rahul Sharma",
       "isFeatured": true,
-      "image": "/courses/web-development.jpg"
+      "image": "https://images.unsplash.com/photo-1526378722484-bd91ca387e72"
     },
     {
       "id": 2,
@@ -18,7 +18,7 @@
       "price": 249.99,
       "instructor": "Anita Verma",
       "isFeatured": true,
-      "image": "/courses/data-science.jpg"
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71"
     },
     {
       "id": 3,
@@ -28,7 +28,7 @@
       "price": 299.99,
       "instructor": "Arjun Mehta",
       "isFeatured": true,
-      "image": "/courses/machine-learning.jpg"
+      "image": "https://images.unsplash.com/photo-1504639725590-34d0984388bd"
     },
     {
       "id": 4,
@@ -38,7 +38,7 @@
       "price": 219.99,
       "instructor": "Neha Kapoor",
       "isFeatured": true,
-      "image": "/courses/mobile-development.jpg"
+      "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9"
     },
     {
       "id": 5,
@@ -48,7 +48,37 @@
       "price": 179.99,
       "instructor": "Amit Kumar",
       "isFeatured": true,
-      "image": "/courses/backend-development.jpg"
-    }  
+      "image": "https://images.unsplash.com/photo-1555949963-aa79dcee981c"
+    },
+    {
+      "id": 6,
+      "title": "DevOps & Cloud Computing",
+      "slug": "devops-cloud",
+      "description": "Learn CI/CD pipelines, Docker, Kubernetes, cloud services, and deployment best practices.",
+      "price": 269.99,
+      "instructor": "Sandeep Malhotra",
+      "isFeatured": false,
+      "image": "https://images.unsplash.com/photo-1518770660439-4636190af475"
+    },
+    {
+      "id": 7,
+      "title": "Cyber Security",
+      "slug": "cyber-security",
+      "description": "Understand ethical hacking, network security, vulnerabilities, and cyber defense techniques.",
+      "price": 289.99,
+      "instructor": "Pooja Singh",
+      "isFeatured": false,
+      "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b"
+    },
+    {
+      "id": 8,
+      "title": "UI/UX Design",
+      "slug": "ui-ux-design",
+      "description": "Learn user experience design, wireframing, prototyping, and modern UI design principles.",
+      "price": 159.99,
+      "instructor": "Kunal Verma",
+      "isFeatured": false,
+      "image": "https://images.unsplash.com/photo-1545235617-9465d2a55698"
+    }
   ]
 }

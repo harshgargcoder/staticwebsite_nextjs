@@ -2,6 +2,9 @@ import HeroSection from "@/components/HeroSection";
 import FeaturedCourses from "@/components/FeaturedCourses";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import CodeCraftingTestimonial from "@/components/CodeCraftingTestimonial";
+import UpcomingWebinars from "@/components/UpcomingWebinars";
+import Instructors from "@/components/Instructors";
+import Footer from "@/components/Footer";
 
 export default function HomePage() {
   return (
@@ -11,6 +14,9 @@ export default function HomePage() {
         <FeaturedCourses />
         <WhyChooseUs />
         <CodeCraftingTestimonial />
+        <UpcomingWebinars />
+        <Instructors />
+        <Footer />
       </main>
     </>
   );
