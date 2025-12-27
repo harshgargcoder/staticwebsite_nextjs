@@ -5,7 +5,6 @@ import Meteors from "@/components/ui/meteors";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
-    name: "",
     email: "",
     message: "",
   });
@@ -22,66 +21,84 @@ export default function ContactForm() {
     e.preventDefault();
     setLoading(true);
 
-    console.log(formData);
-
     setTimeout(() => {
       alert("Message sent successfully!");
-      setFormData({ name: "", email: "", message: "" });
+      setFormData({ email: "", message: "" });
       setLoading(false);
     }, 800);
   };
 
   return (
-    // 👇 FULL PAGE / SECTION WRAPPER
-    <section className="relative min-h-screen bg-black overflow-hidden flex items-center justify-center">
-      
-      {/* 👇 METEORS BACKGROUND */}
-      <Meteors />
+    <section className="relative min-h-screen bg-[#0b1220] overflow-hidden flex items-center justify-center px-4 pt-32 sm:pt-40">
+      {/* Meteors background */}
+      <Meteors number={80}/>
 
-      {/* 👇 FORM CARD */}
-      <div className="relative z-10 max-w-md w-full bg-black p-6 rounded-lg border border-gray-800">
-        <h2 className="text-white text-xl font-semibold mb-4">
+      {/* Content */}
+      <div className="relative z-10 w-full max-w-2xl text-center">
+        {/* Heading */}
+        <h1 className="text-5xl sm:text-6xl font-bold text-white mb-4">
           Contact Us
-        </h2>
+        </h1>
 
-        <form onSubmit={handleSubmit} className="space-y-4">
-          <input
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            required
-            value={formData.name}
-            onChange={handleChange}
-            className="w-full rounded-md bg-gray-900 border border-gray-700 px-4 py-2 text-sm text-white focus:outline-none focus:ring-2 focus:ring-gray-600"
-          />
+        <p className="text-neutral-400 max-w-xl mx-auto mb-10 text-sm sm:text-base">
+          We&apos;re here to help with any questions about our courses, programs,
+          or events. Reach out and let us know how we can assist you.
+        </p>
 
+        {/* Form */}
+        <form onSubmit={handleSubmit} className="space-y-6">
+          {/* Email */}
           <input
             type="email"
             name="email"
-            placeholder="Your Email"
+            placeholder="Your email address"
             required
             value={formData.email}
             onChange={handleChange}
-            className="w-full rounded-md bg-gray-900 border border-gray-700 px-4 py-2 text-sm text-white focus:outline-none focus:ring-2 focus:ring-gray-600"
+            className="
+              w-full rounded-xl bg-black/70 px-5 py-4
+              text-white placeholder-neutral-500
+              border border-cyan-500/40
+              focus:outline-none focus:ring-2 focus:ring-cyan-400
+              shadow-[0_0_25px_rgba(34,211,238,0.2)]
+            "
           />
 
+          {/* Message */}
           <textarea
             name="message"
-            placeholder="Your Message"
+            placeholder="Your message"
             required
-            rows={4}
+            rows={6}
             value={formData.message}
             onChange={handleChange}
-            className="w-full rounded-md bg-gray-900 border border-gray-700 px-4 py-2 text-sm text-white resize-none focus:outline-none focus:ring-2 focus:ring-gray-600"
+            className="
+              w-full rounded-xl bg-black/70 px-5 py-4
+              text-white placeholder-neutral-500
+              border border-cyan-500/30
+              focus:outline-none focus:ring-2 focus:ring-cyan-400
+              shadow-[0_0_25px_rgba(34,211,238,0.15)]
+              resize-none
+            "
           />
 
-          <button
-            type="submit"
-            disabled={loading}
-            className="w-full bg-white text-black py-2 rounded-md text-sm font-medium hover:bg-gray-200 transition disabled:opacity-60"
-          >
-            {loading ? "Sending..." : "Send Message"}
-          </button>
+          {/* Button */}
+          <div className="flex justify-center">
+            <button
+              type="submit"
+              disabled={loading}
+              className="
+                px-8 py-3 rounded-xl
+                bg-gradient-to-r from-emerald-400 to-cyan-400
+                text-black font-semibold
+                hover:opacity-90 transition
+                shadow-[0_0_30px_rgba(34,211,238,0.4)]
+                disabled:opacity-60 cursor-pointer
+              "
+            >
+              {loading ? "Sending..." : "Send Message"}
+            </button>
+          </div>
         </form>
       </div>
     </section>

@@ -1,7 +1,7 @@
 "use client";
 
 import { cn } from "@/utils/cn";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 
 type Meteor = {
@@ -18,7 +18,7 @@ export default function Meteors({
   className?: string;
 }) {
   const [width, setWidth] = useState<number>(0);
-  const [meteors, setMeteors] = useState<Meteor[]>([]);
+  const [meteors, setMeteors] = useState<Meteor[]>([]); // ✅ important
 
   useEffect(() => {
     const updateWidth = () => setWidth(window.innerWidth);
